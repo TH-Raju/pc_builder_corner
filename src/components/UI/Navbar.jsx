@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ products }) => {
     const menuItems = <>
         <li><a>Home</a></li>
         <li tabIndex={0}>
             <details>
-                <summary>Category</summary>
+                <summary>Categorys</summary>
                 <ul className="p-2">
                     <li><a>CPU / Processor</a></li>
                     <li><a>Motherboard</a></li>
@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><a>Sign in</a></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-gray-400">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

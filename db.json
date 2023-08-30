@@ -1,0 +1,148 @@
+{
+    "products": [
+        {
+            "image": "https://images.unsplash.com/photo-1591799265444-d66432b91588?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SGlnaCUyMFBlcmZvcm1hbmNlJTIwQ1BVfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "High-Performance CPU",
+            "category": "CPU / Processor",
+            "price": 399.99,
+            "status": "In Stock",
+            "rating": 4.8
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGlnaCUyMFBlcmZvcm1hbmNlJTIwQ1BVfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Ryzen CPU",
+            "category": "CPU / Processor",
+            "price": 400,
+            "status": "In Stock",
+            "rating": 4.7
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1600348712270-5af9e3590f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Q1BVfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Intel CPU",
+            "category": "CPU / Processor",
+            "price": 410,
+            "status": "In Stock",
+            "rating": 4.5
+        },
+        {
+            "image": "https://plus.unsplash.com/premium_photo-1663040598592-9f3e311f9841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW90aGVyYm9hcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Advanced Motherboard",
+            "category": "Motherboard",
+            "price": 249.99,
+            "status": "In Stock",
+            "rating": 4.9
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TW90aGVyYm9hcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Motherboard",
+            "category": "Motherboard",
+            "price": 340.99,
+            "status": "In Stock",
+            "rating": 4.8
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW90aGVyYm9hcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Highest Motherboard",
+            "category": "Motherboard",
+            "price": 200.90,
+            "status": "In Stock",
+            "rating": 4.7
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1562976540-1502c2145186?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UkFNfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "16GB DDR4 RAM",
+            "category": "RAM",
+            "price": 129.99,
+            "status": "Out of Stock",
+            "rating": 4.5
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1592664474505-51c549ad15c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UkFNfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "24GB DDR4 RAM",
+            "category": "RAM",
+            "price": 329.99,
+            "status": "In Stock",
+            "rating": 4.6
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1542978709-19c95dc3bc7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UkFNfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "8GB DDR4 RAM",
+            "category": "RAM",
+            "price": 59.99,
+            "status": "In Stock",
+            "rating": 4.7
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1529961172671-d48e8280f846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UG93ZXIlMjBTdXBwbHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "800W Power Supply",
+            "category": "Power Supply Unit",
+            "price": 129.99,
+            "status": "In Stock",
+            "rating": 4.8
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1624705013726-8cb4f9415f40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3RvcCUyMFBvd2VyJTIwU3VwcGx5fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "600W Power Supply",
+            "category": "Power Supply Unit",
+            "price": 101.99,
+            "status": "In Stock",
+            "rating": 4.7
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVza3RvcCUyMFBvd2VyJTIwU3VwcGx5fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+            "product_name": "600W Power Supply",
+            "category": "Power Supply Unit",
+            "price": 101.99,
+            "status": "Out of Stock",
+            "rating": 4.5
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1686705562930-4f3e46f620d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TlZNZSUyMFNTRHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "1TB NVMe SSD",
+            "category": "Storage Device",
+            "price": 199.99,
+            "status": "In Stock",
+            "rating": 4.8
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1659543038858-9673fc324a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TlZNZSUyMFNTRHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "2TB NVMe SSD",
+            "category": "Storage Device",
+            "price": 299.99,
+            "status": "In Stock",
+            "rating": 4.6
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1661347560937-729e531289a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TlZNZSUyMFNTRHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "500GB NVMe SSD",
+            "category": "Storage Device",
+            "price": 99.99,
+            "status": "In Stock",
+            "rating": 4.5
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8R2FtaW5nJTIwTW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "27-inch Gaming Monitor",
+            "category": "Monitor",
+            "price": 299.99,
+            "status": "In Stock",
+            "rating": 4.4
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8R2FtaW5nJTIwTW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Gaming Monitor",
+            "category": "Monitor",
+            "price": 399.99,
+            "status": "In Stock",
+            "rating": 4.8
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R2FtaW5nJTIwTW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+            "product_name": "Simple Monitor",
+            "category": "Monitor",
+            "price": 199.99,
+            "status": "In Stock",
+            "rating": 4.5
+        }
+    ]
+}

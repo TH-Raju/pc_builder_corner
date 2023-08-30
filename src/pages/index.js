@@ -1,3 +1,5 @@
+import RootLayout from "@/components/Layouts/RootLayout";
+import Navbar from "@/components/UI/Navbar";
 
 const HomePage = () => {
   return (
@@ -8,3 +10,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+HomePage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};

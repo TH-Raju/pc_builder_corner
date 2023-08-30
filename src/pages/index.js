@@ -1,5 +1,6 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Products from "./Product";
+import Banner from "@/components/UI/Banner";
 
 
 
@@ -7,7 +8,10 @@ const HomePage = ({ products }) => {
 
   return (
     <div>
-      <h1>Home Page </h1>
+      <Banner></Banner>
+      <h1 id="featured" className="text-3xl text-center font-extrabold mt-24">Featured Products</h1>
+      <hr class="my-4 border-t-2 border-gray-900 ml-[30%] mr-[30%] " />
+
       <div className="col-span-9 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-10 w-[80%] mx-auto">
         {
           products.map(product => <Products key={product._id} product={product}></Products>)

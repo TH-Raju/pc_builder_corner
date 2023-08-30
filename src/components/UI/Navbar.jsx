@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link href="/"><button className="btn btn-ghost normal-case text-xl">PC Builder Corner</button></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -38,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">PC Builder</a>
+                <Link href='/pcBuilder'><button className="btn btn-primary">PC Builder</button></Link>
             </div>
         </div>
     );

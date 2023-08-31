@@ -2,10 +2,13 @@
 import Link from 'next/link';
 import React from 'react';
 import { useSession, signOut } from 'next-auth/react'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '@/firebase/firebase.auth';
 
 
 const Navbar = ({ products }) => {
     const { data: session } = useSession();
+    const [user, loading, error] = useAuthState(auth);
     // console.log("from nav", session);
     const menuItems = <>
         <li><a>Home</a></li>
@@ -23,9 +26,12 @@ const Navbar = ({ products }) => {
             </details>
         </li>
         {
-            session?.user ?
+            session?.user || user?.email ?
                 <button onClick={() => signOut()} className='btn btn-warning btn-sm mt-2'>Log out</button> :
-                <Link href='/login'><li>Log in</li></Link>
+                <>
+                    <Link href='/login' className='lg:mt-2 md:ml-3 md:mb-1 ml-3 mb-1'><li>Log in</li></Link>
+                    <Link href='/signup' className='lg:mt-2 md:ml-3 md:mb-1 ml-3'><li>Sign up</li></Link>
+                </>
         }
     </>
     return (

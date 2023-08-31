@@ -1,21 +1,36 @@
-
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from "@/firebase/firebase.auth";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { useRouter } from 'next/router';
+import RootLayout from '@/components/Layouts/RootLayout';
 
 const SignUp = () => {
     const { register, handleSubmit, reset } = useForm();
+    const router = useRouter()
+    const [
+        createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+
 
     const onSubmit = data => {
-        console.log(data);
+        createUserWithEmailAndPassword(data.email, data.password);
         reset()
+
     }
+
+    if (user) {
+        alert("Acoount Created Successfully")
+        router.push("/")
+    }
+
+
 
 
     return (
         <div className='flex justify-center items-center lg:mt-[10%] md:mt-[20%] mt-[30%]'>
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
-                <h1 className="text-2xl font-bold text-center">Login</h1>
+                <h1 className="text-2xl font-bold text-center">Create Account</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <label htmlFor="" className="block dark:text-gray-400 my-3">Your Email</label>
                     <input type="email"
@@ -27,12 +42,12 @@ const SignUp = () => {
                         {...register("password", { required: true })}
                         className="w-full border border-green-300 px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
                     /> <br />
-                    <button type="submit" className="mt-3 block w-full p-3 text-center rounded-sm dark:text-white dark:bg-blue-700 hover:bg-black">Login</button>
+                    <button type="submit" className="mt-3 block w-full p-3 text-center rounded-sm dark:text-white dark:bg-blue-700 hover:bg-black">Create Account</button>
                 </form>
 
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
-                    <h4 className="px-3 text-sm dark:text-gray-400">Login with social accounts</h4>
+                    <h4 className="px-3 text-sm dark:text-gray-400">Sign up with social accounts</h4>
                     <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
                 </div>
                 <div className="flex justify-center space-x-4">
@@ -52,8 +67,8 @@ const SignUp = () => {
                     </button>
 
                 </div>
-                <h4 className="text-xs text-center sm:px-6 dark:text-gray-400">Don't have an account?
-                    <Link href='/signup'><h4 rel="noopener noreferrer" href="#" className="underline dark:text-gray-100">Sign up</h4></Link>
+                <h4 className="text-xs text-center sm:px-6 dark:text-gray-400">Already have an account?
+                    <Link href='/login'><h4 rel="noopener noreferrer" href="#" className="underline dark:text-gray-100">Log in</h4></Link>
                 </h4>
             </div>
         </div>
@@ -61,3 +76,8 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
+
+SignUp.getLayout = function getLayout(page) {
+    return <RootLayout>{page}</RootLayout>;
+};

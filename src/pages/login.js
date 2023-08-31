@@ -1,33 +1,49 @@
-
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from "@/firebase/firebase.auth";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { useRouter } from 'next/router';
+import RootLayout from '@/components/Layouts/RootLayout';
 
 const LogIn = () => {
     const { register, handleSubmit, reset } = useForm();
 
+    const router = useRouter()
+    const [
+        signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
+
+
     const onSubmit = data => {
-        console.log(data);
+        signInWithEmailAndPassword(data.email, data.password);
         reset()
+
+    }
+    console.log(user);
+
+    if (user) {
+        // alert("Acoount Created Successfully")
+        router.push("/")
     }
 
 
     return (
         <div className='flex justify-center items-center lg:mt-[10%] md:mt-[20%] mt-[30%]'>
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
-                <h1 className="text-2xl font-bold text-center">Login</h1>
+                <h1 className="text-2xl font-bold text-center">Log in</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <label htmlFor="" className="block dark:text-gray-400 my-3">Your Email</label>
+                    <label className="block dark:text-gray-400 my-3">Your Email</label>
                     <input type="email"
                         {...register("email", { required: true })}
                         className="w-full border border-green-300 px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
                     /> <br />
-                    <label htmlFor="" className="block dark:text-gray-400 my-3">Your Password</label>
+                    <label className="block dark:text-gray-400 my-3">Your Password</label>
                     <input type="password"
                         {...register("password", { required: true })}
                         className="w-full border border-green-300 px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400"
                     /> <br />
-                    <button type="submit" className="mt-3 block w-full p-3 text-center rounded-sm dark:text-white dark:bg-blue-700 hover:bg-black">Login</button>
+                    <p>{error?.message}</p>
+                    <button type="submit" className="mt-3 block w-full p-3 text-center rounded-sm dark:text-white dark:bg-blue-700 hover:bg-black">Log in</button>
                 </form>
 
                 <div className="flex items-center pt-4 space-x-1">
@@ -61,3 +77,7 @@ const LogIn = () => {
 };
 
 export default LogIn;
+
+LogIn.getLayout = function getLayout(page) {
+    return <RootLayout>{page}</RootLayout>;
+};

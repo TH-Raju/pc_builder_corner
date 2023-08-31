@@ -10,7 +10,7 @@ const HomePage = ({ products }) => {
     <div>
       <Banner></Banner>
       <h1 id="featured" className="text-3xl text-center font-extrabold mt-24">Featured Products</h1>
-      <hr class="my-4 border-t-2 border-gray-900 ml-[30%] mr-[30%] " />
+      <hr className="my-4 border-t-2 border-gray-900 ml-[30%] mr-[30%] " />
 
       <div className="col-span-9 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-10 w-[80%] mx-auto">
         {

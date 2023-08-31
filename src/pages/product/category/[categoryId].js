@@ -1,12 +1,6 @@
-import RootLayout from '@/components/Layouts/RootLayout';
-import Link from 'next/link';
-import ProductDetails from './ProductDetail';
-import { useRouter } from 'next/router';
+import RootLayout from "@/components/Layouts/RootLayout";
 
-const ProductDetail = ({ product, products }) => {
-    const router = useRouter();
-    // const category = product.category
-    // const filterCategory = products.filter(product => product.category === category)
+const CategoryDetail = ({ product }) => {
     return (
         <div className="flex max-w-7xl mx-auto justify-around gap-7 items-center border-b border-gray-300 w-[80%] mt-28">
             <div className="w-[50%]">
@@ -22,22 +16,18 @@ const ProductDetail = ({ product, products }) => {
                 </p>
                 <p>Rating: {product?.rating}</p>
 
-                <Link href={`/product/category/${product._id}`}><button className="btn btn-neutral">Detail</button></Link>
-
+                <button className="btn btn-neutral">Detail</button>
             </div>
-
         </div>
     );
 };
 
-export default ProductDetail;
+export default CategoryDetail;
 
 
-ProductDetail.getLayout = function getLayout(page) {
+CategoryDetail.getLayout = function getLayout(page) {
     return <RootLayout>{page}</RootLayout>
 }
-
-
 
 
 export const getStaticPaths = async () => {
@@ -45,7 +35,7 @@ export const getStaticPaths = async () => {
     const products = await res.json()
 
     const paths = products.map(product => ({
-        params: { productId: product._id }
+        params: { categoryId: product._id }
     }))
 
     return { paths, fallback: false };
@@ -54,7 +44,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:5000/products/${params.productId}`)
+    const res = await fetch(`http://localhost:5000/products/${params.categoryId}`)
     const data = await res.json()
 
 
@@ -64,4 +54,3 @@ export const getStaticProps = async (context) => {
         }
     }
 }
-

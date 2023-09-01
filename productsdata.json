@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Intel Core i7-11700K",
+        "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/bundle-with-pc-intel-11th-gen-rocket-lake-core-11617172224.webp",
+        "category": "CPU / Processor",
+        "status": "In Stock",
+        "price": "$399.99",
+        "description": "The Intel Core i7-11700K is a powerful CPU designed for high-performance computing.",
+        "key_features": {
+            "Brand": "Intel",
+            "Model": "Core i7-11700K",
+            "Specification": "8 cores, 16 threads",
+            "Socket": "LGA1200",
+            "Clock Speed": "3.6 GHz (4.9 GHz Max Turbo)",
+            "TDP": "125W"
+        },
+        "individual_rating": 4.8,
+        "average_rating": 4.7,
+        "reviews": [
+            {
+                "author": "User123",
+                "rating": 5,
+                "comment": "Great CPU, blazing fast performance!"
+            },
+            {
+                "author": "TechGuru",
+                "rating": 4,
+                "comment": "Solid processor for gaming and multitasking."
+            }
+        ]
+    },
+    {
+        "name": "ASUS ROG Strix B550-F Gaming",
+        "image": "https://techbd.com.bd/wp-content/uploads/2021/04/rog-stix-b550f-wifi-5-500x500-1.jpg",
+        "category": "Motherboard",
+        "status": "In Stock",
+        "price": "$199.99",
+        "description": "The ASUS ROG Strix B550-F Gaming is a feature-rich motherboard for gaming enthusiasts.",
+        "key_features": {
+            "Brand": "ASUS",
+            "Model": "ROG Strix B550-F Gaming",
+            "Form Factor": "ATX",
+            "Socket": "AM4",
+            "RAM Slots": "4x DDR4",
+            "Expansion Slots": "2x PCIe x16, 2x PCIe x1",
+            "Storage": "2x M.2, 6x SATA",
+            "USB Ports": "USB 3.2 Gen 2 Type-A, USB 3.2 Gen 1 Type-C",
+            "Networking": "Gigabit Ethernet, Wi-Fi 6"
+        },
+        "individual_rating": 4.7,
+        "average_rating": 4.6,
+        "reviews": [
+            {
+                "author": "GamerGirl99",
+                "rating": 5,
+                "comment": "The best motherboard I've ever used!"
+            },
+            {
+                "author": "PCBuilder123",
+                "rating": 4,
+                "comment": "Lots of connectivity options, very satisfied."
+            }
+        ]
+    },
+    {
+        "name": "Corsair Vengeance LPX 16GB DDR4",
+        "image": "https://computerimporter.com/wp-content/uploads/2022/03/16gb-ddr4-500x500-1-1200x900.jpg",
+        "category": "RAM",
+        "status": "In Stock",
+        "price": "$79.99",
+        "description": "The Corsair Vengeance LPX 16GB DDR4 RAM offers high-speed performance for gaming and multitasking.",
+        "key_features": {
+            "Brand": "Corsair",
+            "Model": "Vengeance LPX",
+            "Capacity": "16GB (2 x 8GB)",
+            "Type": "DDR4",
+            "Speed": "3200MHz",
+            "CAS Latency": "16",
+            "Voltage": "1.35V",
+            "Heat Spreader": "Yes"
+        },
+        "individual_rating": 4.8,
+        "average_rating": 4.7,
+        "reviews": [
+            {
+                "author": "User456",
+                "rating": 5,
+                "comment": "Fast and reliable RAM, perfect for my gaming rig."
+            },
+            {
+                "author": "PCEnthusiast789",
+                "rating": 4,
+                "comment": "Good performance, but a bit pricey."
+            }
+        ]
+    },
+    {
+        "name": "EVGA Supernova 750 G5",
+        "image": "https://images.evga.com/products/gallery//png/220-G5-0750-X2_XL_1.png",
+        "category": "Power Supply Unit",
+        "status": "In Stock",
+        "price": "$119.99",
+        "description": "The EVGA Supernova 750 G5 is a high-quality power supply with excellent efficiency and reliability.",
+        "key_features": {
+            "Brand": "EVGA",
+            "Model": "Supernova 750 G5",
+            "Wattage": "750W",
+            "Certification": "80 Plus Gold",
+            "Modular": "Fully Modular",
+            "Fan Size": "135mm",
+            "Connectors": "ATX, EPS, PCIe, SATA, Molex"
+        },
+        "individual_rating": 4.7,
+        "average_rating": 4.6,
+        "reviews": [
+            {
+                "author": "PowerUser123",
+                "rating": 5,
+                "comment": "Reliable and efficient PSU, great for gaming builds."
+            },
+            {
+                "author": "TechGeek789",
+                "rating": 4,
+                "comment": "Good performance, but could be quieter."
+            }
+        ]
+    },
+    {
+        "name": "Samsung 970 EVO Plus 500GB NVMe SSD",
+        "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/samsung-970-evo-plus-nvme-500gb-m2-2280-pcie-gen-41583840849.webp",
+        "category": "Storage Device",
+        "status": "In Stock",
+        "price": "$89.99",
+        "description": "The Samsung 970 EVO Plus NVMe SSD offers lightning-fast read/write speeds and reliable performance.",
+        "key_features": {
+            "Brand": "Samsung",
+            "Model": "970 EVO Plus",
+            "Capacity": "500GB",
+            "Interface": "NVMe PCIe 3.0 x4",
+            "Read Speed": "3500 MB/s",
+            "Write Speed": "3300 MB/s",
+            "Form Factor": "M.2 2280"
+        },
+        "individual_rating": 4.9,
+        "average_rating": 4.8,
+        "reviews": [
+            {
+                "author": "StorageGuru123",
+                "rating": 5,
+                "comment": "Blazing fast SSD, great for OS and games!"
+            },
+            {
+                "author": "TechFanatic456",
+                "rating": 4,
+                "comment": "Solid performance, but a bit pricey for higher capacities."
+            }
+        ]
+    },
+    {
+        "name": "LG 27GL850-B 27-inch QHD Gaming Monitor",
+        "image": "https://www.lg.com/content/dam/channel/wcms/uk/images/monitors/27GL850-B_AEK_EEUK_UK_C/gallery/medium01.jpg",
+        "category": "Monitor",
+        "status": "In Stock",
+        "price": "$499.99",
+        "description": "The LG 27GL850-B is a high-performance gaming monitor with a QHD resolution and fast refresh rates.",
+        "key_features": {
+            "Brand": "LG",
+            "Model": "27GL850-B",
+            "Screen Size": "27-inch",
+            "Resolution": "2560x1440 (QHD)",
+            "Refresh Rate": "144Hz",
+            "Panel Type": "Nano IPS",
+            "Response Time": "1ms (GtG)",
+            "Connectivity": "HDMI, DisplayPort, USB Hub"
+        },
+        "individual_rating": 4.8,
+        "average_rating": 4.7,
+        "reviews": [
+            {
+                "author": "GamerPro789",
+                "rating": 5,
+                "comment": "Stunning colors and smooth gaming experience!"
+            },
+            {
+                "author": "TechEnthusiast123",
+                "rating": 4,
+                "comment": "Great monitor, but a bit pricey compared to competitors."
+            }
+        ]
+    }
+]

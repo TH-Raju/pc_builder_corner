@@ -1,0 +1,183 @@
+[
+    {
+        "name": "CPU / Processor",
+        "image": "url-to-cpu-image.jpg",
+        "products": [
+            {
+                "id": "1",
+                "name": "Intel Core i7-11700K",
+                "category": "CPU / Processor",
+                "image": "url-to-i7-11700k-image.jpg",
+                "price": "$399.99",
+                "status": "In Stock",
+                "rating": 4.8
+            },
+            {
+                "name": "AMD Ryzen 9 5900X",
+                "category": "CPU / Processor",
+                "image": "url-to-ryzen-5900x-image.jpg",
+                "price": "$499.99",
+                "status": "In Stock",
+                "rating": 4.9
+            },
+            {
+                "name": "Intel Core i5-11600K",
+                "category": "CPU / Processor",
+                "image": "url-to-i5-11600k-image.jpg",
+                "price": "$299.99",
+                "status": "Out of Stock",
+                "rating": 4.5
+            }
+        ]
+    },
+    {
+        "name": "Motherboard",
+        "image": "url-to-motherboard-image.jpg",
+        "products": [
+            {
+                "name": "ASUS ROG Strix B550-F Gaming",
+                "category": "Motherboard",
+                "image": "url-to-asus-b550f-image.jpg",
+                "price": "$199.99",
+                "status": "In Stock",
+                "rating": 4.7
+            },
+            {
+                "name": "MSI MPG Z590 Gaming Carbon WiFi",
+                "category": "Motherboard",
+                "image": "url-to-msi-z590-carbon-image.jpg",
+                "price": "$249.99",
+                "status": "In Stock",
+                "rating": 4.6
+            },
+            {
+                "name": "GIGABYTE B450 AORUS PRO",
+                "category": "Motherboard",
+                "image": "url-to-gigabyte-b450-image.jpg",
+                "price": "$149.99",
+                "status": "Out of Stock",
+                "rating": 4.3
+            }
+        ]
+    },
+    {
+        "name": "RAM",
+        "image": "url-to-ram-image.jpg",
+        "products": [
+            {
+                "name": "Corsair Vengeance LPX 16GB DDR4",
+                "category": "RAM",
+                "image": "url-to-corsair-vengeance-image.jpg",
+                "price": "$79.99",
+                "status": "In Stock",
+                "rating": 4.8
+            },
+            {
+                "name": "G.SKILL Trident Z Neo 32GB DDR4",
+                "category": "RAM",
+                "image": "url-to-gskill-tridentz-image.jpg",
+                "price": "$129.99",
+                "status": "In Stock",
+                "rating": 4.9
+            },
+            {
+                "name": "Kingston HyperX Fury 8GB DDR4",
+                "category": "RAM",
+                "image": "url-to-kingston-hyperx-image.jpg",
+                "price": "$59.99",
+                "status": "Out of Stock",
+                "rating": 4.6
+            }
+        ]
+    },
+    {
+        "name": "Power Supply Unit",
+        "image": "url-to-psu-image.jpg",
+        "products": [
+            {
+                "name": "EVGA Supernova 750 G5",
+                "category": "Power Supply Unit",
+                "image": "url-to-evga-supernova-image.jpg",
+                "price": "$119.99",
+                "status": "In Stock",
+                "rating": 4.7
+            },
+            {
+                "name": "Corsair RM850x",
+                "category": "Power Supply Unit",
+                "image": "url-to-corsair-rm850x-image.jpg",
+                "price": "$139.99",
+                "status": "Out of Stock",
+                "rating": 4.5
+            },
+            {
+                "name": "Seasonic Focus GX-650",
+                "category": "Power Supply Unit",
+                "image": "url-to-seasonic-focus-gx-image.jpg",
+                "price": "$99.99",
+                "status": "In Stock",
+                "rating": 4.8
+            }
+        ]
+    },
+    {
+        "name": "Storage Device",
+        "image": "url-to-storage-device-image.jpg",
+        "products": [
+            {
+                "name": "Samsung 970 EVO Plus 500GB NVMe SSD",
+                "category": "Storage Device",
+                "image": "url-to-samsung-970-evo-image.jpg",
+                "price": "$89.99",
+                "status": "In Stock",
+                "rating": 4.9
+            },
+            {
+                "name": "Crucial MX500 1TB SATA SSD",
+                "category": "Storage Device",
+                "image": "url-to-crucial-mx500-image.jpg",
+                "price": "$109.99",
+                "status": "In Stock",
+                "rating": 4.7
+            },
+            {
+                "name": "Western Digital Blue 2TB HDD",
+                "category": "Storage Device",
+                "image": "url-to-wd-blue-hdd-image.jpg",
+                "price": "$79.99",
+                "status": "Out of Stock",
+                "rating": 4.6
+            }
+        ]
+    },
+    {
+        "name": "Monitor",
+        "image": "url-to-monitor-image.jpg",
+        "products": [
+            {
+                "name": "LG 27GL850-B 27-inch QHD Gaming Monitor",
+                "category": "Monitor",
+                "image": "url-to-lg-27gl850-image.jpg",
+                "price": "$499.99",
+                "status": "In Stock",
+                "rating": 4.8
+            },
+            {
+                "name": "ASUS TUF Gaming VG27AQ 27-inch WQHD Monitor",
+                "category": "Monitor",
+                "image": "url-to-asus-vg27aq-image.jpg",
+                "price": "$549.99",
+                "status": "In Stock",
+                "rating": 4.7
+            },
+            {
+                "name": "AOC C24G1 24-inch Curved Gaming Monitor",
+                "category": "Monitor",
+                "image": "url-to-aoc-c24g1-image.jpg",
+                "price": "$199.99",
+                "status": "Out of Stock",
+                "rating": 4.5
+            }
+        ]
+    }
+]

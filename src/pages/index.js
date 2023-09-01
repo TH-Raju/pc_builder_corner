@@ -1,44 +1,44 @@
-import RootLayout from "@/components/Layouts/RootLayout";
-import Products from "./Product";
-import Banner from "@/components/UI/Banner";
+import React from "react";
 
+import dynamic from "next/dynamic";
+import AllProducts from "@/components/Products/Products";
+import Category from "../pages/category/index";
+import ProductCategory from "@/components/category/ProductCategory";
+import { useGetCategoryQuery } from "@/redux/features/category/categoryApi";
+import HeroSection from "@/components/ui/Hero";
+import Footer from "@/components/ui/Footer";
 
+const RootLayout = dynamic(() => import("../components/layouts/RootLayout"), {
+  ssr: false,
+});
+const HomePage = ({ products, categories }) => {
+  console.log(products)
 
-const HomePage = ({ products }) => {
+  // const { data: category } = useGetCategoryQuery(null);
 
   return (
     <div>
-      <Banner></Banner>
-      <h1 id="featured" className="text-3xl text-center font-extrabold mt-24">Featured Products</h1>
-      <hr className="my-4 border-t-2 border-gray-900 ml-[30%] mr-[30%] " />
 
-      <div className="col-span-9 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-10 w-[80%] mx-auto">
-        {
-          products.map(product => <Products key={product._id} product={product}></Products>)
-        }
-      </div>
+      <HeroSection />
+      <AllProducts products={products} />
+      <Category products={categories} />
+      <Footer />
     </div>
   );
 };
 
 export default HomePage;
-
 HomePage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
-
-
 export const getStaticProps = async () => {
+  if (typeof window === undefined) {
+    return { props: { products: [], categories: [] } }
+  }
+  const res = await fetch("https://pc-builder-pink-pi.vercel.app/api/products");
+  const products = await res.json();
+  const cateres = await fetch("https://pc-builder-pink-pi.vercel.app/api/categories");
+  const categories = await cateres.json();
 
-  const res = await fetch("http://localhost:5000/homeproducts")
-  const data = await res.json()
-  // console.log(data.length);
-
-  return {
-    props: {
-      products: data
-
-    }
-  };
-}
-
+  return { props: { products, categories } };
+};
